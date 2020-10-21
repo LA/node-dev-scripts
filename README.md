@@ -12,4 +12,4 @@ Easily transfer all repositories from one GitHub organization to another.
   - NEW_ORG
     - The organization name you want to transfer repos to.
 - Run `npm install` to install dependencies.
-- Start with `node .` or `node index.js`.
+- Run `node .` or `node index.js` to start the script.
