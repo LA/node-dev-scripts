@@ -21,5 +21,7 @@ Easily transfer all repositories from one GitHub organization to another.
     - Where all the repository folders are located.
   - ORG_NAME
     - GitHub organization name for creating .git URL that origin will be changed to.
+  - SSH (Optional)
+    - Set to TRUE if you would like your links to use SSH.
 - Run `npm install` to install dependencies.
 - Start with `node change-remote-urls.js`
