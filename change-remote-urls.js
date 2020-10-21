@@ -15,8 +15,8 @@ const getDirectories = (source) =>
 const sshTemplate = (full_name) => `git@github.com:${full_name}.git`;
 const httpsTemplate = (full_name) => `https://github.com/${full_name}.git`;
 
-Promise.all([
-  ...getDirectories(dir).map((name) => {
+Promise.all(
+  getDirectories(dir).map((name) => {
     return new Promise((resolve) => {
       const full_name = `${org}/${name}`;
       const command = `cd ${dir}/${name} && git remote set-url origin ${
@@ -35,7 +35,7 @@ Promise.all([
         resolve();
       });
     });
-  }),
-]).then(() => {
+  })
+).then(() => {
   exec(`cd ${currentDir}`, (error, _, stderr) => {});
 });
