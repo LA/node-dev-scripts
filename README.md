@@ -16,7 +16,7 @@ Easily transfer all repositories from one GitHub organization to another.
 
 ### change-remote-urls.js
 
-- Add the following env variables to .env:
+- Add the following variables to .env:
   - DIRECTORY
     - Where all the repository folders are located.
   - ORG_NAME
