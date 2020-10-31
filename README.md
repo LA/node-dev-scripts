@@ -4,6 +4,7 @@ Easily transfer all repositories from one GitHub organization to another.
 
 ## Usage
 
+### bulk-transfer-repo.js
 - Create .env in root folder (`bulk-transfer-repo/.env`) with the following variables:
   - ACCESS_TOKEN
     - Github personal access token.
