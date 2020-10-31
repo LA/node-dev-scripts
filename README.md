@@ -1,11 +1,11 @@
-# bulk-transfer-repo
+# node-gh-scripts
 
 Easily transfer all repositories from one GitHub organization to another.
 
 ## Usage
 
 ### bulk-transfer-repo.js
-- Create .env in root folder (`bulk-transfer-repo/.env`) with the following variables:
+- Create .env in root folder (`node-gh-scripts/.env`) with the following variables:
   - ACCESS_TOKEN
     - Github personal access token.
   - OLD_ORG
@@ -17,7 +17,7 @@ Easily transfer all repositories from one GitHub organization to another.
 
 ### change-remote-urls.js
 
-- Add the following variables to .env:
+- Create .env in root folder (`node-gh-scripts/.env`) with the following variables:
   - DIRECTORY
     - Where all the repository folders are located.
   - ORG_NAME
