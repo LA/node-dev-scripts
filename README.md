@@ -1,8 +1,8 @@
-# node-gh-scripts
+# node-dev-scripts
 
-Easily transfer all repositories from one GitHub organization to another.
+Helper scripts for workspace management.
 
-## Usage
+## GitHub
 
 ### bulk-transfer-repos.js
 
