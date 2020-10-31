@@ -10,7 +10,10 @@ async function main() {
   const httpsTemplate = (full_name) => `https://github.com/${full_name}.git`;
   const { data } = await octokit.request(`GET /orgs/:org/repos`, {
     org: process.env.ORG_NAME,
+    per_page: 100
   });
+  
+  console.log(`Cloning ${data.length} repos to ${process.env.ORG_DIR}`);
 
   let command = `cd ${process.env.ORG_DIR}; `;
 
