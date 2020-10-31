@@ -43,3 +43,13 @@ Helper scripts for workspace management.
     - Set to TRUE if you would like your links to use SSH.
 - Run `npm install` to install dependencies.
 - Start with `node change-remote-urls.js`
+
+### create-vscode-workspace.js
+
+- Create .env in root folder (`node-dev-scripts/.env`) with the following variables:
+  - WORKSPACE_PATH
+    - Absolute path where your workspace folders are + where the .code-workspace file will be saved.
+  - WORKSPACE_NAME
+    - What you would like to name the .code-workspace file.
+- Run `npm install` to install dependencies.
+- Start with `node change-remote-urls.js`
