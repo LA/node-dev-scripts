@@ -4,8 +4,9 @@ Easily transfer all repositories from one GitHub organization to another.
 
 ## Usage
 
-### bulk-transfer-repo.js
-- Create .env in root folder (`node-gh-scripts/.env`) with the following variables:
+### bulk-transfer-repos.js
+
+- Create .env in root folder (`node-dev-scripts/.env`) with the following variables:
   - ACCESS_TOKEN
     - Github personal access token.
   - OLD_ORG
@@ -17,11 +18,27 @@ Easily transfer all repositories from one GitHub organization to another.
 
 ### change-remote-urls.js
 
-- Create .env in root folder (`node-gh-scripts/.env`) with the following variables:
+- Create .env in root folder (`node-dev-scripts/.env`) with the following variables:
+  - ACCESS_TOKEN
+    - Github personal access token.
   - DIRECTORY
     - Where all the repository folders are located.
   - ORG_NAME
     - GitHub organization name for creating .git URL that origin will be changed to.
+  - SSH (Optional)
+    - Set to TRUE if you would like your links to use SSH.
+- Run `npm install` to install dependencies.
+- Start with `node change-remote-urls.js`
+
+### bulk-clone-repos.js
+
+- Create .env in root folder (`node-dev-scripts/.env`) with the following variables:
+  - ACCESS_TOKEN
+    - Github personal access token.
+  - ORG_DIR
+    - Where you would like all organization repos to be cloned in to.
+  - ORG_NAME
+    - GitHub organization name for fetching available repos.
   - SSH (Optional)
     - Set to TRUE if you would like your links to use SSH.
 - Run `npm install` to install dependencies.
