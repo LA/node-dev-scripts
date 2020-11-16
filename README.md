@@ -48,6 +48,7 @@ Helper scripts for workspace management.
 
 - Create .env in root folder (`node-dev-scripts/.env`) with the following variables:
   - DIR
+    - Directory of repos to pull.
 - Run `npm install` to install dependencies.
 - Start with `node bulk-pull.js`
 
